@@ -1,0 +1,15 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "nixpacksPlan": {
+      "phases": {
+        "build": {
+          "cmds": ["go mod tidy"]
+        },
+        "start": {
+          "cmd": "./start.sh"
+        }
+      }
+    }
+  }
+}
